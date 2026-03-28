@@ -1,0 +1,53 @@
+{
+  "name": "substrate-memory-ai-sdk",
+  "version": "1.0.0",
+  "description": "SUBSTRATE cognitive memory provider for the Vercel AI SDK",
+  "main": "dist/index.js",
+  "types": "src/index.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/index.js",
+      "import": "./dist/index.js",
+      "types": "./src/index.ts"
+    }
+  },
+  "files": [
+    "dist/",
+    "src/",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "ai-sdk",
+    "substrate",
+    "memory",
+    "mcp",
+    "vercel",
+    "cognitive",
+    "garmo"
+  ],
+  "author": "Garmo Labs <hello@garmolabs.com>",
+  "license": "MIT",
+  "homepage": "https://garmolabs.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PKaldone/SUBSTRATE"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "peerDependencies": {
+    "ai": ">=3.0.0"
+  },
+  "peerDependenciesMeta": {
+    "ai": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0"
+  }
+}
